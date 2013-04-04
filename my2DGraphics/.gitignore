@@ -1,2 +1,3 @@
-/Degug
-/Release
+Degug/
+Release/
+*.user

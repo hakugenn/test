@@ -1,12 +1,16 @@
-#include <iostream>
-
 #include "GameLib/Framework.h"
 
-using namespace std;
+using namespace GameLib;
 
-int main(){
-	Framework framework;
-	while( true ){
-		framework.update();
+namespace GameLib{
+	void Framework::update(){
+		//getInput();
+		//updateGame();
+		//draw();
+		unsigned* vram = videoMemory();
+		static unsigned i;
+		vram[ i ] += i * 100;
+		i += 9973; //1ñúà»â∫ç≈ëÂÇÃëfêî
+		i %= ( width() * height() );
 	}
 }
