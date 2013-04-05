@@ -4,9 +4,6 @@ using namespace GameLib;
 
 namespace GameLib{
 	void Framework::update(){
-		//getInput();
-		//updateGame();
-		//draw();
 		unsigned* vram = videoMemory();
 		static unsigned i;
 		vram[ i ] += i * 100;

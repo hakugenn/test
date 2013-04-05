@@ -1,3 +1,8 @@
 Degug/
 Release/
 *.user
+*.opt
+*.clw
+*.ncb
+*.aps
+*.mak
